@@ -24,7 +24,6 @@ namespace Circu_Carina_Lab7.Data
            .FirstOrDefaultAsync();
         }
         public Task<int> SaveShopListAsync(ShopList slist)
-        {
             if (slist.ID != 0)
             {
                 return _database.UpdateAsync(slist);
